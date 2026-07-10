@@ -1,0 +1,69 @@
+/*=====================
+Global Styling
+=======================
+*/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#3c2a21;
+    --seconadry-color:#f5ebe0;
+    --tertiary-color:#7b7675;
+    --standard-color:#fff8f6;
+
+    --font-main:"Inter",serif;
+    --font-weight-main:700;
+    ---font-weight-minor:500;
+    --font-heading:'Poppins',serif;
+    --font-logo:"Cormorant Garamond", Garamond, "Times New Roman", serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+
+body{
+    font-family: var(--font-main);
+    line-height: 1.6;
+    background-color: var(--standard-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+    border: none;
+    align-items: center;
+    padding: 2rem 0 2.3rem;
+    background-color: var(--primary-color);
+    color: var(--standard-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3{
+    font-family: var(--font-main);
+    font-weight: var(---font-weight-main);
+}
+h4,h4,h6{
+    font-family: var(--font-heading);
+    font-family: var(---font-weight-minor);
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    flex: 1;
+}
+
+ul{
+    list-style: none;
+}
