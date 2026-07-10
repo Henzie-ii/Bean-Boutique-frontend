@@ -27,7 +27,6 @@ body{
     background-color: var(--standard-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto 1fr;
@@ -37,12 +36,14 @@ body{
 button{
     border: none;
     align-items: center;
-    padding: .5rem;
+    padding: .4rem 1.5rem;
     background-color: var(--primary-color);
     color: var(--standard-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--font-main);
+    font-weight: var(---font-weight-minor);
 }
 
 h1,h2,h3{
@@ -141,4 +142,52 @@ header{
 }
 .cart img{
     width: 1.4rem;
+}
+
+
+/*hero section*/
+.index-section{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background: var(--standard-color);
+    position: relative;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content span{
+    background-color: aliceblue;
+    padding: 0 1rem;
+    border-radius: 20px;
+    font-family: var(--font-heading);
+    font-weight: var(---font-weight-minor);
+}
+.hero-content h1{
+    font-family: var(--font-main);
+    font-weight: var(---font-weight-main);
+    font-size: 2.3rem;
+}
+.hero-content p{
+    font-family: var(--font-main);
+    font-weight: var(---font-weight-minor);
+    font-size: 1rem;
+    opacity: .7;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.hero-btn button{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+.hero-btn button:hover{
+    background-color: #783c1e;
 }
