@@ -1,5 +1,9 @@
+//========================
+//  Index responsiveness
+//=========================
 
-//slideshow function 
+
+//slideshow responsiveness 
 const slideshow = document.querySelectorAll('.hero-content')
 let currentSlide = 0;
 const slideInterval = 4000;
