@@ -73,6 +73,9 @@ main{
 ul{
     list-style: none;
 }
+html,body{
+    overflow-x: hidden;
+}
 
 
 /*==================
@@ -149,7 +152,6 @@ header{
 .index-section{
     width: 100%;
     height: 80vh;
-    overflow: hidden;
     background-color:#1a1a1a;
     position: relative;
 }
@@ -434,13 +436,14 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    min-height: 50vh;
+    min-height:30vh ;
     gap: 2rem;
 }
 .index-footer-content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 300px;
 }
 .index-footer-content h2{
     font-family: var(--font-heading);
@@ -455,7 +458,7 @@ header{
 }
 .footer-connect{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
 }
 .footer-connect img{
@@ -478,7 +481,7 @@ header{
 }
 .map{
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     height: 250px;
     border: 0;
 }
