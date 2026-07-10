@@ -14,16 +14,16 @@ Global Styling
     --standard-color:#fff8f6;
     --button-hover:#783c1e;
 
-    --font-main:"Inter",serif;
     --font-weight-main:800;
     ---font-weight-minor:500;
-    --font-heading:'Poppins',serif;
+    --font-heading:"Inter",serif;
+    --font-text:'Poppins',serif;
     --font-logo:"Cormorant Garamond", Garamond, "Times New Roman", serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
 
 body{
-    font-family: var(--font-main);
+    font-family: var(--font-heading);
     line-height: 1.6;
     background-color: var(--standard-color);
     -webkit-font-smoothing: antialiased;
@@ -42,12 +42,12 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-main);
+    font-family: var(--font-heading);
     font-weight: var(---font-weight-minor);
 }
 
 h1,h2,h3{
-    font-family: var(--font-main);
+    font-family: var(--font-heading);
     font-weight: var(---font-weight-main);
 }
 h4,h4,h6{
@@ -199,16 +199,16 @@ header{
     background-color: aliceblue;
     padding: 0 1rem;
     border-radius: 20px;
-    font-family: var(--font-heading);
+    font-family: var(--font-text);
     font-weight: var(---font-weight-minor);
 }
 .hero-text h1{
-    font-family: var(--font-main);
+    font-family: var(--font-heading);
     font-weight: var(---font-weight-main);
     font-size: 2.3rem;
 }
 .hero-text p{
-    font-family: var(--font-main);
+    font-family: var(--font-heading);
     font-weight: var(---font-weight-minor);
     font-size: 1rem;
     opacity: .7;
@@ -233,7 +233,7 @@ header{
 /*seasonal selection*/
 .seasonal-section{
     background-color: var(--tertiary-color);
-    padding: 8rem 8vw 2.4rem;
+    padding: 8rem 8vw 7rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -244,7 +244,7 @@ header{
     font-size: 2.1rem;
 }
 .seasonal-heading p{
-    font-family: var(--font-main);
+    font-family: var(--font-heading);
     font-weight: var(---font-weight-minor);
     opacity: .7;
 }
@@ -285,7 +285,7 @@ header{
 .seasonal-content strong{
     background-color: #5d5c5c4c;
     padding: 0 .5rem;
-    font-family: var(--font-heading);
+    font-family: var(--font-text);
     font-size: .95rem;
     font-weight: 450;
     border-radius: 12rem;
@@ -307,4 +307,80 @@ header{
 .blend-container span{
     padding: 1rem ;
     opacity: .8;
+}
+
+/*subscription link*/
+.brand-section{
+    background-color: var(--standard-color);
+    padding: 7rem 8rem 4rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.brand-img{
+    width: 100%;
+    overflow: hidden;
+}
+.brand-img img{
+    max-width: 25rem;
+    max-height: 30rem;
+    object-fit: cover;
+}
+.brand-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6rem;
+}
+.brand-container h2{
+    font-family: var(--font-text);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin-bottom: 1.3rem;
+}
+.brand-container p{
+    color: var(--primary-color);
+    font-weight: 500;
+    opacity: .9;
+    font-family: var(--font-text);
+}
+.brand-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    padding: 2.3rem 0;
+}
+.sub-offers{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.sub-offers img{
+    width: 2.3rem;
+}
+.delivery-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.delivery-text span{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Poppins",serif;
+    opacity: .9;
+}
+.brand-section button{
+    width: 15rem;
+    padding: .6rem;
+    font-size: .9rem;
+    font-weight: 600;
+    transition: background-color .4s ease;
+    cursor: pointer;
+    border-radius: 18rem;
+}
+.brand-section button:hover{
+    background-color: var(--button-hover);
 }
