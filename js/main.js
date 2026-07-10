@@ -4,21 +4,24 @@
 
 
 //slideshow responsiveness 
-const slideshow = document.querySelectorAll('.hero-content')
+document.addEventListener("DOMContentLoaded", () => {
+const slideShow = document.querySelectorAll('.hero-content');
 let currentSlide = 0;
 const slideInterval = 4000;
 
-slideshow.forEach( slide => {
-    const slideImg = slide.getAttribute('slides');
-    if(slideImg){
-        slide.style.backgroundImage = `url('${slides}')`;
+slideshow.forEach(slide => {
+    const backgroundImages = slide.getAttribute('slides');
+    if(backgroundImages){
+        slide.style.backgroundImage = `url('${backgroundImages}')`;
     }
 });
 
 function nextSlide(){
-    slideshow[currentSlide].classList.remove ('active')
+    slideShow[currentSlide].classList.remove ('active');
     currentSlide = currentSlide(currentSlide + 1) % slide.length;
-    slideshow[currentSlide].classList.add('active')
+    slideShow[currentSlide].classList.add('active');
 }
 
 setInterval(nextSlide, slideInterval);
+
+}) ;
