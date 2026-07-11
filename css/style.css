@@ -452,6 +452,7 @@ header{
     font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;
 }
 .index-footer-content p{
     color: var(--primary-color);
@@ -1083,4 +1084,20 @@ summary{
     background-color: var(--seconadry-color);
     padding: .6rem 1.2vw;
     border-radius: 12px;
+}
+
+/*equipment-footer*/
+.equipement-footer-section{
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:4rem 8vw 4rem;
+    min-height: 50vh;
+}
+.equipment-footer{
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+    margin-bottom: 4rem;    
 }
