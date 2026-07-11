@@ -532,8 +532,8 @@ Subscritpions styling
 .subscription-collection{
     margin-top: 3rem;
     background-color: var(--tertiary-color);
-    padding: 3rem 5vw;
-    height: 100vh; 
+    padding: 3rem 6vw;
+    height: 105vh; 
 }
 .subscription-collection h2{
     font-family: var(--font-heading);
@@ -649,3 +649,124 @@ Subscritpions styling
 .offer-card.special button:hover{
     background-color: #b69876;
 }
+
+/*subscritpion offers*/
+.subscription-offer-section{
+    background-color: var(--standard-color);
+    padding: 3rem 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    align-self: start;
+    margin-top: 2.8rem;
+}
+.subscription-offer-heading h2{
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.subscription-offer-heading p{
+    font-family: var(--font-text);
+    color: var(--primary-color);
+    font-weight: 600;
+    opacity: .8;  
+    text-align: center;
+    margin-top: .8rem;
+}
+.subscription-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+.subscription-card{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    max-width: 18rem;
+    border-radius: 12px;
+    padding: 1rem 1.6rem 1.3rem;
+    background-color:  var(--seconadry-color);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+    transition: transform .4s ease;
+}
+.subscription-card:hover{
+    transform: translateY(-2px);
+}
+.subscription-card.standard{
+    border: 2px solid var(--button-hover);
+}
+.subscription-card h3{
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    opacity: .8;
+    font-style: italic;
+    margin-bottom: 0;   
+}
+.sub-price{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    gap: .2rem;
+}
+.sub-price strong{
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.sub-price span{
+    font-size: .8rem;
+    font-weight: 500;
+    opacity: .7;
+}
+.subscription-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+.sub-content{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.sub-content img{
+    width: .9rem;
+}
+.sub-content p{
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 1rem;
+    opacity: .9;
+}
+.subscribe-btn{
+    display: flex;
+    margin-bottom: auto;
+    width: 100%;
+}
+.subscribe-btn button{
+    padding: .4rem;
+    width: 100%;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: .9rem;
+    background-color: var(--primary-color);
+    transition: background-color .4s ease;
+}
+.subscribe-btn button:hover{
+    background-color: var(--button-hover);
+}
+
+
