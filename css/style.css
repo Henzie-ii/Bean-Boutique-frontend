@@ -804,10 +804,12 @@ Subscritpions styling
 /*subscription form*/
 .subscribe-form{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 4.5rem;
+    gap: 3rem;
+    height: 80vh;
+    margin-top: 4rem;
 }
 .subscribe-form h3{
     font-family: var(--font-heading);
@@ -815,6 +817,7 @@ Subscritpions styling
     color: var(--primary-color);
     font-size: 1.6rem;
     margin-bottom: .5rem;
+    text-align: center;
 }
 .subscribe-form-btn{
     display: flex;
@@ -843,4 +846,54 @@ Subscritpions styling
     background-color: var(--button-hover);
 }
 
+/*Faq*/
+.subscription-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px;
+    padding: 2rem;
+    background-color: var(--tertiary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.faq-details{
+    border-bottom: 1px solid var(--primary-color);
+    transition: background-color .4s ease;
+}
+.faq-details:last-of-type{
+    border-bottom: none;
+}
+summary{
+    font-weight: 600;
+    font-family: var(--primary-color);
+    opacity: .9;
+}
+.faq-details summary{
+    list-style-type: none;
+    padding: 1.2rem .5rem;
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: color .3s ease, padding-left .2s ease;
+}
+.faq-details summary::after{
+    color: var(--button-hover);
+    transition: transform .2s ease;
+    content: "*";
+    font-size: 1.1rem;
+}
+.faq-details summary:hover{
+    color: var(--primary-color);
+    padding-left: .7rem;
+}
+.faq-text{
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 500;
+    opacity: .8;
+}
 
