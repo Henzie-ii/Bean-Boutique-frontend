@@ -485,3 +485,48 @@ header{
     height: 250px;
     border: 0;
 }
+
+/**
+========================
+Subscritpions styling
+========================
+*/
+
+/*subscrption content*/
+.subscription-container{
+    padding: 2.9rem 8vw; 
+}
+.subscription-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+.subscription-heading h1{
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-weight: 700;
+    opacity: .9;
+}
+.subscription-heading p{
+    font-family: var(--font-text);
+    color: var(--primary-color);
+    font-weight: 500;
+    opacity: .8;  
+    text-align: center; 
+}
+.subscription-heading button{
+    padding: .5rem 2rem;
+    margin-top: .5rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--seconadry-color);
+    border-radius: 12rem;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+.subscription-heading button:hover{
+    background-color: var(--button-hover);
+}
+
