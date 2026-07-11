@@ -493,15 +493,13 @@ Subscritpions styling
 */
 
 /*subscrption content*/
-.subscription-container{
-    padding: 2.9rem 8vw; 
-}
 .subscription-heading{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: .8rem;
+    padding: 2.9rem 8vw; 
 }
 .subscription-heading h1{
     font-family: var(--font-heading);
@@ -530,3 +528,124 @@ Subscritpions styling
     background-color: var(--button-hover);
 }
 
+/*promotion offers section*/
+.subscription-collection{
+    margin-top: 3rem;
+    background-color: var(--tertiary-color);
+    padding: 3rem 5vw;
+    height: 100vh; 
+}
+.subscription-collection h2{
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.subscription-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-top: 2.5rem;
+}
+.offer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 480px;
+    overflow: hidden;
+    background-color: var(--standard-color);
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+.offer-card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+.offer-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.offer-card-badge{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    padding: 0 .6rem;
+    border-radius: 12px;
+}
+.offer-card-badge span{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-family: var(--font-text);
+    font-style: italic;
+}
+.offer-card-content p{
+    font-family: var(--font-text);
+    color: var(--primary-color);
+    font-weight: 500;
+    opacity: .8;  
+    text-align: center; 
+    flex:1;
+}
+.offer-card button{
+    padding: .5rem 4.5vw;
+    margin-top: .5rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--seconadry-color);
+    border-radius: 12rem;
+    cursor: pointer;
+    transition: background-color .4s ease; 
+}
+.offer-card button:hover{
+    background-color: var(--button-hover);
+}
+.offer-card h2{
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.offer-card-badge-tip{
+    display: flex;
+    gap: .9rem;
+
+}
+.span-badge{
+    color: var(--standard-color);
+    font-weight: 600;
+    font-family: var(--font-text);
+    font-style: italic;
+    background-color: var(--tertiary-color);
+    padding: 0 3vw;
+    border-radius: 12px;  
+}
+.offer-card.special{
+    background-color: var(--primary-color);
+}
+.offer-card.special p{
+    color: var(--standard-color);
+    font-weight: 600;
+}
+.offer-card.special h2{
+    color: var(--standard-color);
+    font-weight: 700;
+}
+.offer-card.special button{
+    background-color: var(--standard-color);
+    color: #1a1a1a;
+
+    transition: background-color .4s ease; 
+}
+.offer-card.special button:hover{
+    background-color: #b69876;
+}
