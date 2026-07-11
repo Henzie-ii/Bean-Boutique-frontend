@@ -1053,6 +1053,7 @@ summary{
     display: flex;
     gap: 2.3rem;
     justify-content: center;
+    margin-top: 2.3rem;
 }
 .tip-card{
     width: 100%;
@@ -1060,7 +1061,7 @@ summary{
     text-align: start;
 }
 .tip-card img{
-    width: 4rem;
+    width: 2.4rem;
 }
 .tip-text h3{
     font-weight: 700;
