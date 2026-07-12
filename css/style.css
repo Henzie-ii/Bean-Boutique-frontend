@@ -1270,3 +1270,93 @@ summary{
     line-height: 1.7;
     opacity: .8;
 }
+
+/*suscription link*/
+.subscription-link{
+    background-color: var(--standard-color);
+    padding: 10rem 6vw;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.subscription-email{
+    background-color: var(--seconadry-color);
+    padding: 2.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 12px;
+}
+.subscription-email h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+.subscription-email p{
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+    opacity: .9;
+    line-height: 1.7;
+}
+.subscription-input{
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.subscription-input input{
+    padding: .5rem;
+    outline: none;
+    width: 400px;
+    border-radius: 12px;
+    border: 1px solid var(--button-hover);
+}
+.subscription-input button{
+    padding: .5rem 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background-color .4s ease;
+}
+.subscription-input button:hover{
+    background-color: var(--button-hover);
+}
+.subscription-card.coffee{
+    padding: 1.5rem 2rem;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+.subscription-card.coffee span{
+    color: var(--standard-color);
+    text-align: center;
+    font-weight: 500;
+    opacity: .8;
+    font-family: "Salina", serif;
+}
+.subscription-card.coffee p{
+    color: var(--standard-color);
+    text-align: center;
+    opacity: .7;
+}
+.subscription-card.coffee button{
+    background-color: var(--standard-color);
+    color: var(--primary-color);
+    margin-top: 1.8rem;
+    width: 100%;
+    transition: background-color .4s ease;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.subscription-card.coffee button:hover{
+    background-color: #b69876;
+    color: white;
+}
+.subscription-card.coffee img{
+    width: 2rem;
+}
