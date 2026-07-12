@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const wrapper = document.querySelector(".slideshow-wrapper")
 
 const folderpath = "assets/images/ui/";
-const images = ["screen4.jpg", "screen3.jpg", "screen5.jpg"];
+const images = ["equipment1.png", "screen3.jpg", "screen8.jpg", "screen9.jpg"];
 
 let currentSlide = 0;
 const slideInterval = 6000;
