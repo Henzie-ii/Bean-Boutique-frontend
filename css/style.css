@@ -50,11 +50,13 @@ button{
 h1,h2,h3{
     font-family: var(--font-heading);
     font-weight: var(---font-weight-main);
+    color: var(--primary-color);
 }
 h4,h4,h6{
     font-family: var(--font-heading);
     font-family: var(---font-weight-minor);
     font-size: 1.3rem;
+    color: var(--primary-color);
 }
 
 a{
@@ -1508,4 +1510,123 @@ summary{
 }
 .event-price button:hover{
     background-color: var(--button-hover);
+}
+
+
+
+/*event form section*/
+.event-form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;   
+    padding: 2rem 8vw;
+    background-color: var(--seconadry-color);
+}
+.event-form-heading{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.event-form-heading h3{
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.event-form-heading p{
+    font-weight: 500;
+    color: var(--primary-color);
+    opacity: 1;
+}
+.event-form-container{
+    background-color: var(--standard-color);
+    padding: 3rem 2vw 3rem;
+    margin: 0.3rem 0 6rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.event-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.event-input-section{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.event-input{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: center;
+}
+.label{
+    margin-left: .5rem ;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.05rem;
+    opacity: 1;
+}
+.event-input input{
+    width: 27vw;
+    padding: .6rem 1rem;
+    text-align: left;
+    outline: none;
+    border: .6px solid var(--button-hover);
+    box-sizing: border-box;
+    transition: background-color .4s ease;
+    border-radius:16px ;
+}
+.event-input input:focus{
+    border-color: var(--secondary-color);
+}
+.event-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:.2rem
+}
+
+.selection-column{
+    width: 55.2vw;
+    padding: .6rem 1rem;
+    text-align: left;
+    outline: none;
+    border: .6px solid var(--button-hover);
+    box-sizing: border-box;
+    transition: background-color .4s ease;
+    border-radius: 16px;
+}
+.event-signup-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.4rem;
+    width: 100%;
+    margin-top: 1.4rem;
+}
+.event-signup-btn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    max-width: 29rem;
+    border-radius: 18px;
+    padding: 1rem 2rem;
+}
+.event-signup-btn button:hover{
+    background-color: var(--button-hover);
+}
+.event-signup-btn p{
+    color: #3c2a21;
+    font-weight: 500;
+    font-size: .7rem;
 }
