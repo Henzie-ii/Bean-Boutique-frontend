@@ -1,5 +1,5 @@
 /*=====================
-Global Styling
+    Global Styling
 =======================
 */
 *{
@@ -79,9 +79,13 @@ html,body{
 }
 
 
-/*==================
+
+
+
+
+/*========================
    Index styling
-===================*/
+=========================*/
 
 /* hero-section */
 header{
@@ -488,6 +492,12 @@ header{
     height: 250px;
     border: 0;
 }
+
+
+
+
+
+
 
 /**
 ========================
@@ -900,6 +910,11 @@ summary{
     opacity: .8;
 }
 
+
+
+
+
+
 /*===================
     equipment style
 ======================*/
@@ -1101,6 +1116,7 @@ summary{
     overflow: hidden;
     margin-bottom: 4rem;    
 }
+
 
 
 /*=====================
@@ -1359,4 +1375,39 @@ summary{
 }
 .subscription-card.coffee img{
     width: 2rem;
+}
+
+
+
+
+
+/*=====================
+    EVENTS STYLING
+======================*/
+.events-heading-section{
+    background-color: var(--standard-color);
+    padding: 3rem 6vw;
+    display: flex;
+    justify-content: center;
+}
+.event-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 720px;
+    gap: 1rem;
+}
+.event-title h1{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.9rem;
+    text-align: center;
+}
+.event-title p{
+    line-height: 1.8;
+    font-weight: 600;
+    opacity: .9;
+    color: var(--primary-color);
+    text-align: center;
 }
