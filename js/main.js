@@ -34,3 +34,6 @@ function nextSlide(){
 setInterval(nextSlide, slideInterval);
 
 }) ;
+
+
+//

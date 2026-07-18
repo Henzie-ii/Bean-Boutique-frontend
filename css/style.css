@@ -20,7 +20,6 @@
     --font-text:'Poppins',serif;
     --font-logo:"Cormorant Garamond", Garamond, "Times New Roman", serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
 
 body{
     font-family: var(--font-heading);
@@ -89,7 +88,8 @@ html,body{
    Index styling
 =========================*/
 
-/* hero-section */
+/* navgation-section */
+
 header{
     display: flex;
     align-items: center;
@@ -149,11 +149,11 @@ header{
     align-items: center;
     margin-right: 2.1rem;
     cursor: pointer;
+    gap: 25px;
 }
 .cart img{
     width: 1.4rem;
 }
-
 
 /*hero section*/
 .index-section{
@@ -493,7 +493,54 @@ header{
     border: 0;
 }
 
-
+/*mobile responsiveness*/
+.menu-toggle,
+.hamburger{
+    display: none;
+}
+@media(max-width: 768px){
+    .menu-toggle:checked ~ nav{
+        display: block;
+    }
+    .hamburger{
+        font-size: 1.7rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        user-select: none;
+        display: block;
+    }
+    nav{
+        z-index: 99;
+        background-color: var(--seconadry-color);
+        width: 100%;
+        top: 85%;
+        left: 0;
+        position: relative;
+        display: none;
+    }
+    .nav-links{
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+    }
+    .nav-items a{
+        display: block;
+        padding: 1.2rem 1.9rem;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    }
+    .nav-items{
+        width: 100%;
+    }
+    .nav-items a::after{
+        display: none;
+    }
+    .nav-items a:hover{
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+   
+}
 
 
 
@@ -928,12 +975,6 @@ summary{
     gap: 1rem;
     width: 100%;
 }
-.equipment-hero-card span{
-    background-color:var(--primary-color);
-    padding: 0.1rem .8vw;
-    border-radius: 12rem;
-    color: var(--standard-color);
-}
 .equipment-hero-card h1{
     font-weight: 600;
     color: var(--primary-color);
@@ -1305,6 +1346,7 @@ summary{
     align-items: center;
     gap: 1.5rem;
     border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 .subscription-email h2{
     font-weight: 700;
@@ -1341,41 +1383,6 @@ summary{
 }
 .subscription-input button:hover{
     background-color: var(--button-hover);
-}
-.subscription-card.coffee{
-    padding: 1.5rem 2rem;
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-}
-.subscription-card.coffee span{
-    color: var(--standard-color);
-    text-align: center;
-    font-weight: 500;
-    opacity: .8;
-    font-family: "Salina", serif;
-}
-.subscription-card.coffee p{
-    color: var(--standard-color);
-    text-align: center;
-    opacity: .7;
-}
-.subscription-card.coffee button{
-    background-color: var(--standard-color);
-    color: var(--primary-color);
-    margin-top: 1.8rem;
-    width: 100%;
-    transition: background-color .4s ease;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: .9rem;
-}
-.subscription-card.coffee button:hover{
-    background-color: #b69876;
-    color: white;
-}
-.subscription-card.coffee img{
-    width: 2rem;
 }
 
 
