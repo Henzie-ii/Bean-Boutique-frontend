@@ -1286,15 +1286,14 @@ summary{
     background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding:4rem 8vw 4rem;
+    padding:4rem 6vw 4rem;
     min-height: 50vh;
 }
 .equipment-footer{
-    display: flex;
+    padding: 2rem 5vw 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    overflow: hidden;
-    margin-bottom: 4rem;    
 }
 
 
@@ -1327,6 +1326,7 @@ summary{
     overflow: hidden;
     border-radius: 12px;
     background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 .coffee-promotion img{
     max-height: 20rem;
@@ -1346,18 +1346,10 @@ summary{
     font-weight: 500;
     line-height: 1.8;
 }
-.badge-prom-title strong{
-    background-color: var(--tertiary-color);
-    padding: 0.2rem 2rem;
-    margin-left: 2rem;
-    text-align: center;
-    color: aliceblue;
-    border-radius: 12px;
-}
 .coffee-badge{
     display: flex;
-    gap: 1.5rem;
-    margin-left: 2rem;
+    gap: 1rem;
+    margin-left: .7rem;
     align-items: center;
 }
 .coffee-badge span{
@@ -1450,12 +1442,12 @@ summary{
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     margin-left: 1rem;
     padding:0 .5rem .8rem
 }
 .taste img{
-    width: 1rem;
+    width: .9rem;
 }
 .taste strong{
     font-weight: 750;
@@ -1467,7 +1459,6 @@ summary{
     line-height: 1.7;
     opacity: .8;
 }
-
 /*suscription link*/
 .subscription-link{
     background-color: var(--standard-color);
@@ -1524,8 +1515,75 @@ summary{
     background-color: var(--button-hover);
 }
 
+/*mobile responsiveness*/
+@media(max-width:768px){
+    .coffee-hero-section{
+        padding: 5rem 5vw 2rem;
+    }
+    .coffee-hero-section h1{
+        font-size: 1.8rem;
+    }
+    .coffee-promotion{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .coffee-content{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: .3rem;
+    }
+    .coffee-content p{
+        font-size: .9rem;
+        padding: 0 1.5rem;
+    }
+    .coffee-collection{
+        padding: 2rem 4vw;
+    }
+    .coffee-container{
+        flex-direction: column;
+        padding: 0 2vw;
+        width: 100%;
+        height: 100%;
+    }
+    .coffee-card img{
+        max-width: 100%;
+        max-height: 15rem;
+    }
 
 
+    .subscription-link{
+        padding: 5rem 4vw;
+    }
+    .subscription-email{
+        width: 100%;
+        padding: 2rem 6.5vw;
+    }
+    .subscription-email h2{
+        font-size: 1.5rem;
+    }
+    .subscription-email p{
+        font-size: .9rem;
+    }
+    .subscription-input{
+        flex-direction: column;
+    }
+    .subscription-input input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+  
+    .equipment-footer-section{
+        padding: 4rem 6vw 3rem;
+    }
+    .equipment-footer{
+        grid-template-columns: 1fr;
+    }
+    
+
+}
 
 
 /*=====================
