@@ -1581,9 +1581,10 @@ summary{
     .equipment-footer{
         grid-template-columns: 1fr;
     }
-    
 
 }
+
+
 
 
 /*=====================
@@ -1656,10 +1657,9 @@ summary{
     height: 100%;
     max-height: 250px;
     max-width: 55rem;
-    gap: 8rem;
+    gap: .5rem;
     align-items: center;
-    padding: 1.1rem;
-    object-fit: cover;
+    padding: 1.1rem 2vw;
     border: 1px solid var(--button-hover);
     transition: box-shadow .4s ease;
 }
@@ -1832,4 +1832,86 @@ summary{
     color: #3c2a21;
     font-weight: 500;
     font-size: .7rem;
+}
+
+/*mobile responsiveness*/
+@media(max-width: 768px){
+    .event-title{
+        padding: 2rem 5vw ; 
+    }
+    .event-title h1{
+        font-size: 1rem;
+    }
+    .event-title p{
+        font-size: .9rem;
+        text-align: start;
+    }
+    .events-flex-title{
+        flex-direction: column;
+        padding: 0 2vw;
+    }
+    .events-flex-title h3{
+        font-size: 1.1rem;
+    }
+    .events-flex-title span{
+        font-size: .7rem;
+    }
+    .events-flex{
+        grid-template-columns: 1fr;
+        padding: 0 5vw;
+    }
+    .events-details-card{
+        width: 100%;
+        max-height: 30rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .events-details-card span{
+        font-size: .75rem;
+        font-style: italic;
+    }
+    .events-details-card h3{
+        font-size: 1.3rem;
+    }
+    .events-details-card p{
+        font-size: .9rem;
+        text-align: start;
+    }
+    .event-schedule{
+        flex-direction: column;
+    }
+    .event-form-section{
+        padding: 2rem 5vw 3rem;
+    }
+    .event-form-heading h3{
+        font-size: 1.5rem;
+    }
+    .event-form-heading p{
+        font-size: .9rem;
+        text-align: center;
+    }
+    .event-form-container{
+        padding: 1.5rem 6vw;
+    }
+    .event-input-section{
+        flex-direction: column;
+        width: 100%;
+    }
+    .event-input, .event-selection{
+        align-items: center;
+    }
+    .event-input input{
+        width: 100%;
+    }
+    .event-selection select{
+        width: 100%;
+    }
+    .event-signup-btn button{
+        width: 100%;
+        max-width: 12rem;
+    }
+    .event-signup-btn p{
+        text-align: center;
+    }
+
 }
