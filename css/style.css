@@ -603,12 +603,20 @@ header{
         padding: 4rem 1.3rem;
         flex-direction: column;
     }
+    .brand-container{
+        align-items: center;
+    }
     .brand-container h2{
         font-size: 1.3rem;
+        text-align: center;
     }
     .sub-offers{
         gap: .4rem;
         flex-direction: column;
+    }
+    .delivery-text{
+        text-align: center;
+        align-items: center;
     }
 
     .index-footer-section{
@@ -645,40 +653,8 @@ header{
         height: 200px;
     }
 
-}@media(max-width:992px){
-    .seasonal-card-wrapper{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .brand-section{
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 4.5rem 4.5vw 3rem;
-    }
-    .brand-container{
-        align-items: center;
-    }
-    .brand-img img{
-        max-width: 100%;
-        height: 700px;
-    }
-    .brand-content{
-        align-items: center;
-    }
-    .sub-offers{
-        justify-content: center;
-    }
-    .delivery-text{
-        text-align: center;
-    }
-    .footer-wrapper{
-        gap: 3rem ;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .index-footer-content{
-        width: 100%;
-    }
 }
+
 
 
 
@@ -1152,8 +1128,7 @@ summary{
 }
 .equipment-collection{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;    
+    flex-direction: column;  
 }
 .equipment-collection h2{
     font-weight: 700;
@@ -1294,6 +1269,53 @@ summary{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+}
+
+/*mobile responsiveness*/
+@media(max-width:768px){
+    .equipment-hero-card h1{
+        font-size: 1.5rem;
+    }
+    .equipment-hero-card p{
+        font-size: .9rem;
+    }
+    .equipment-section{
+        padding: 2rem 5vw;
+        text-align: center;
+    }
+    .equipment-collection h2{
+        font-size: 1.3rem;
+        align-items: center;
+        text-align: center;
+    }
+    .equipment-collection span{
+        font-size: .9rem;
+    }
+    .equipment-container{
+        padding: 0 5vw;
+        flex-direction: column;
+    }
+    .equipment-card img{
+        height: 16.5rem;
+    }
+    .price{
+        flex-direction: column;
+    }.equipement-tips-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipement-tips-section h1{
+        font-size: 1.5rem;
+    }
+    .equipement-tips-section span{
+        font-size: .9rem;
+        text-align: center;
+    }
+    .tips-container{
+        flex-direction: column;
+        padding: 1.5rem 5vw;
+    }
+
 }
 
 
