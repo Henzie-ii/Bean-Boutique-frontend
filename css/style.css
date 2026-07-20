@@ -66,6 +66,7 @@ a{
 img{
     width: 100%;
     height: auto;
+    display: block;
 }
 
 main{
@@ -1990,4 +1991,118 @@ summary{
         text-align: center;
     }
 
+}
+
+
+/*======================
+    Cart page css
+========================
+*/
+.cart-container{
+    padding: 5rem 6vw;
+    background-color: var(--seconadry-color);
+}
+.cart-heading{
+    padding: 2rem 0;
+}
+.cart-heading h3{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.cart-heading p{
+    font-size: 1.1rem;
+    opacity: .8;
+}
+
+/*cart items section*/
+.cart-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cart-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 2rem
+}
+.cart-card{
+    display: flex;
+    background-color: var(--standard-color);
+    align-items: center;
+    padding: 1rem;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    transition: all .4s ease-out;
+    width: 100%;
+}
+.cart-card:hover{
+    border: 1px solid var(--button-hover);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cart-card img{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    background-color: var(--standard-color);
+}
+.cart-details{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.cart-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cart-tags{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+.cart-tags span{
+    background-color: var(--tertiary-color);
+    padding: 0 1vw;
+    border-radius: .5rem;
+}
+.cart-price{
+    font-weight: 600;
+    font-style:italic;
+}
+.cart-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-quantity{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1.5px solid var(--primary-color);
+}
+.cart-quantity button{
+    background-color: var(--standard-color);
+    transition: background-color .6s ease;
+}
+.cart-quantity button:hover{
+    background-color: var(--tertiary-color);
+}
+.cart-quantity span{
+    padding: 0 8px;
+}
+.minus-btn, .plus-btn{
+    color: var(--primary-color);
+    font-size: .9;
+}
+.remove-btn{
+    display: flex;
+    gap: .5rem;
+    background: none;
+    color: #3c2a21;
 }
