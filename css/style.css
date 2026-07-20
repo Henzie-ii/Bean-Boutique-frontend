@@ -30,6 +30,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 button{
@@ -76,13 +77,6 @@ main{
 ul{
     list-style: none;
 }
-html,body{
-    overflow-x: hidden;
-}
-
-
-
-
 
 
 /*========================
@@ -98,7 +92,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--seconadry-color);
+    background-color: #cebca9f4;
     height: 85px;
 }
 .logo{
@@ -151,9 +145,10 @@ header{
     margin-right: 1rem;
     cursor: pointer;
     gap: 15px;
+    margin-right: 1.5rem;
 }
 .cart img{
-    width: 1rem;
+    width: 1.4rem;
 }
 
 /*hero section*/
