@@ -505,7 +505,7 @@ header{
 /*popup modal*/
 .popup-modal{
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -568,6 +568,18 @@ header{
 }
 .modal-input button:hover{
     background-color: var(--button-hover);
+}
+.close-btn{
+    position: absolute;
+    top:130px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    right: 290px;
+    color: #faf9f9;
+    cursor: pointer;
+}
+.close-btn:hover{
+    color: var(--button-hover);
 }
 
 /*mobile responsiveness*/
