@@ -1,7 +1,3 @@
-//========================
-//  Index responsiveness
-//=========================
-
 
 // index slideshow responsiveness 
 document.addEventListener("DOMContentLoaded", () => {
@@ -37,26 +33,25 @@ setInterval(nextSlide, slideInterval);
 
 
 //popup modal
-window.addEventListener("DOMContentLoaded", () => {
-    const loadModal = document.getElementById('getModal');
+window.addEventListener("DOMContentLoaded", () =>{
+    const loadModal = document.getElementById('getModal') 
     const closeBtn = document.querySelector('.close-modal');
 
-     if(!localStorage.getItem('shownpopup') && loadModal){
+    if(!localStorage.getItem('shownpopup' && loadModal)){
         loadModal.style.display = 'flex';
-    };
-
-   if(closeBtn && loadModal){
-    closeBtn.addEventListener('click', () => {
-        loadModal.style.display = 'none';
-        localStorage.setItem('shownpopup', 'true')
-    });
-   }
-
-    window.addEventListener('click', (event) => {
+    }
+    if(closeBtn && loadModal){
+        closeBtn.addEventListener('click', ()=>{
+            loadModal.style.display = 'none';
+            localStorage.setItem('shownpopup', 'true');
+        });
+    }
+    window.addEventListener('click', (event) =>{
         if(event.target === loadModal){
             loadModal.style.display = 'none';
             localStorage.setItem('shownpopup', 'true')
         }
-    })
+    });
 
-})
+});
+// cart calculations

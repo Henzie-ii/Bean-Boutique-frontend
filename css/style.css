@@ -232,7 +232,7 @@ header{
 
 /*seasonal selection*/
 .seasonal-section{
-    background-color: var(--tertiary-color);
+    background-color: var(--seconadry-color);
     padding: 8rem 8vw;
     display: flex;
     flex-direction: column;
@@ -393,7 +393,7 @@ header{
 
 /*index footer*/
 .index-footer-section{
-    background-color: var(--tertiary-color);
+    background-color: var(--seconadry-color);
     padding: 5.5rem 8vw 4rem;
     display: flex;
     flex-direction: column;
@@ -433,7 +433,6 @@ header{
 
 /*Main footer section*/
 .footer-wrapper{
-    background-color: var(--standard-color);
     padding: 0 8vw 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -491,6 +490,7 @@ header{
     border: 0;
 }
 .index-main-footer{
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
