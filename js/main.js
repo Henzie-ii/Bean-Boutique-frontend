@@ -45,14 +45,15 @@ window.addEventListener("DOMContentLoaded", () => {
         loadModal.style.display = 'flex';
     };
 
+   if(closeBtn && loadModal){
     closeBtn.addEventListener('click', () => {
         loadModal.style.display = 'none';
-        
-        localStorage.setItem('shownpopup', 'true');
+        localStorage.setItem('shownpopup', 'true')
     });
+   }
 
     window.addEventListener('click', (event) => {
-        if(event.target === loadmodal){
+        if(event.target === loadModal){
             loadModal.style.display = 'none';
             localStorage.setItem('shownpopup', 'true')
         }

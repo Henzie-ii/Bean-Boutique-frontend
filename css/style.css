@@ -569,7 +569,7 @@ header{
 .modal-input button:hover{
     background-color: var(--button-hover);
 }
-.close-btn{
+.close-modal{
     position: absolute;
     top:130px;
     font-size: 1.7rem;
@@ -578,7 +578,7 @@ header{
     color: #faf9f9;
     cursor: pointer;
 }
-.close-btn:hover{
+.close-modal:hover{
     color: var(--button-hover);
 }
 
@@ -2228,7 +2228,6 @@ summary{
     text-align: center;
     font-weight: 700;
     font-size: 1.5rem;
-    padding-bottom: 1.7rem 0 0;
 }
 .sidebar-row{
     display: flex;
