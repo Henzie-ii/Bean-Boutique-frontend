@@ -54,4 +54,5 @@ window.addEventListener("DOMContentLoaded", () =>{
     });
 
 });
+
 // cart calculations
