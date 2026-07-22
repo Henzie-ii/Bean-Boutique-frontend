@@ -54,7 +54,7 @@
         <!--events section-->
         <section class="events-flex-heading">
             <div class="events-flex-title">
-                <h3>Seasonal scheduals</h3>
+                <h2>Seasonal scheduals</h2>
                 <span>WINTER / AUTUMN 2026</span>
             </div>
             <hr class="event-separator">
@@ -62,10 +62,10 @@
             <!--events flex cards-->
             <div class="events-flex">
             
-                <article class="events-details-card">
+                <div class="events-details-card">
                     <div>
                         <span>Flavour Theory</span>
-                        <h3>Flavour Tasting</h3>
+                        <h2>Flavour Tasting</h2>
                         <p>
                             A sensory event/workshop mainly focusing on identifying origin profiles, acididty balance
                             and mouthfeel through comparative cupping. 
@@ -80,9 +80,9 @@
                         <strong>MK10,000</strong>
                         <button>Select</button>
                     </div>
-                </article>
+                </div>
 
-                  <article class="events-details-card">
+                  <div class="events-details-card">
                     <div>
                         <span>Brewing Methods</span>
                         <h3>Manual Brewing Mastery</h3>
@@ -99,12 +99,12 @@
                         <strong>MK13,000</strong>
                         <button>Select</button>
                     </div>
-                </article>
+                </div>
 
-                  <article class="events-details-card">
+                  <div class="events-details-card">
                     <div>
                         <span>The Source</span>
-                        <h3>Roastry Tour [Mastering the Blend]</h3>
+                        <h2>Roastry Tour [Mastering the Blend]</h2>
                         <p>
                             An Exlusive Q&A session with our Head roaster. A jounery from green bean to your brewer.
                         </p>
@@ -118,7 +118,7 @@
                         <strong>MK15,000</strong>
                         <button>Select</button>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -134,17 +134,17 @@
                 <form action="post" class="event-form-wrapper">
                     <div class="event-input-section">
                         <div class="event-input">
-                            <label class="label" for="">Full Name</label>
-                            <input type="text" placeholder="Enter your fullname" required>
+                            <label class="label" for="fullname">Full Name</label>
+                            <input type="text" placeholder="Enter your fullname" id="fullname" name="fullname" required>
                         </div>
                         <div class="event-input">
-                            <label class="label" for="">Email Address</label>
-                            <input type="email" placeholder="Enter Your Email" required>
+                            <label class="label" for="email">Email Address</label>
+                            <input type="email" placeholder="Enter Your Email" id="email" name="email" required>
                         </div>
                     </div>
                     <div class="event-selection">
-                        <label class="label" for="">Select Workshop</label>
-                        <select class="selection-column" name="event" id="event-choice">
+                        <label class="label" for="events">Select Workshop</label>
+                        <select class="selection-column" name="event" id="events">
                             <option value="">Choose an event...</option>
                             <option value="">Sensory Coffee Tasting</option>
                             <option value="">V60 Brewing Masterclass</option>
@@ -164,33 +164,28 @@
     <footer>
         <section class="equipement-footer-section">
          <div class="equipment-footer">
-            <article class="index-footer-content">
+            <div class="index-footer-content">
                 <h2>Bean Boutique</h2>
                 <p>
                     Crafting the Perfect cup of coffee since 2025. 
                 </p>
-                <div class="footer-connect">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </article>
-            <article class="index-footer-content">
+            </div>
+            <div class="index-footer-content">
                 <h2>Explore</h2>
                 <div class="footer-links">
-                    <a href="">Workshop & Events</a>
-                    <a href="">Blends</a>
-                    <a href="">Brewing Equipment</a>
-                    <a href="">Subscriptions</a>
+                    <a href="events.html">Workshop & Events</a>
+                    <a href="coffee.html">Blends</a>
+                    <a href="equipment.html">Brewing Equipment</a>
+                    <a href="subscriptions.html">Subscriptions</a>
                 </div>
-            </article>
-            <article class="index-footer-content">
+            </div>
+            <div class="index-footer-content">
                 <h2>Company</h2>
                 <div class="footer-links">
                     <a href="aboutus.html">Our Story</a>
                     <a href="Contact">Contact Us</a>
                 </div>
-            </article>
+            </div>
             <div class="index-footer-content">
                 <h2>CONNECT</h2>
                 <div class="footer-links">
@@ -201,7 +196,7 @@
                 </div>        
             </div>
         </div>
-        <hr class="separator"">
+        <hr class="separator">
         <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
         </section>
     </footer>
