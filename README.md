@@ -11,7 +11,7 @@ The site showcases the boutique's unique coffee blends, brewing equipment, and u
 ## Key Features
 * **Dynamic Home Page:** Features a welcoming image slideshow, smooth navigation hover effects, and a promotional modal popup for first-time visitors capturing email signups.
 * **Coffee & Equipment Catalogues:** Structured product pages displaying unique blends (with tasting notes) and brewing equipment (with usage tips).
-* **Events & Workshops:** A dedicated section for community engagement, allowing users to view and register for upcoming classes and tasting sessions.
+* **Events & Workshops:** A dedicated section for community engagement.
 * **Shopping Cart UI:** A front-end cart system that allows visitors to add their favorite items, saving their selections for a streamlined checkout experience.
 * **Subscriptions:** Information architecture detailing special offers and regular coffee delivery subscription tiers.
 * **Integrated Plugins:**
