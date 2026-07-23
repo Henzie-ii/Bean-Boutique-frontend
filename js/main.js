@@ -37,22 +37,32 @@ window.addEventListener("DOMContentLoaded", () =>{
     const loadModal = document.getElementById('getModal') 
     const closeBtn = document.querySelector('.close-modal');
 
+    const closeModal = () =>{
+        if(loadModal){
+            loadModal.style.display = 'none';
+            sessionStorage.setItem('shownpopup')
+        }
+    };
+
+    const popupseen = sessionStorage.getItem('shownpopup')
+
     if(!localStorage.getItem('shownpopup' && loadModal)){
         loadModal.style.display = 'flex';
     }
-    if(closeBtn && loadModal){
-        closeBtn.addEventListener('click', ()=>{
-            loadModal.style.display = 'none';
-            localStorage.setItem('shownpopup', 'true');
-        });
+
+    if(!popupseen && loadModal){
+        loadModal.style.display = 'flex';
     }
+
+    if(closeBtn){
+        closeBtn.addEventListener('click', closeModal);
+    }
+
     window.addEventListener('click', (event) =>{
         if(event.target === loadModal){
-            loadModal.style.display = 'none';
-            localStorage.setItem('shownpopup', 'true')
+            closeModal();
         }
     });
 
 });
 
-// cart calculations

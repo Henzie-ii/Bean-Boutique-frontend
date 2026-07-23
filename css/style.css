@@ -107,7 +107,7 @@ header{
 .logo img{
     width: 4rem;
 }
-.logo span{
+.logo a{
     font-family: var(--font-logo);
     font-size: 1.3rem;
     font-style: italic;
@@ -1070,7 +1070,7 @@ Subscritpions styling
     width: 2rem;
     margin-bottom: 1rem;
 }
-.offer-footer-wrapper h3{
+.offer-footer-wrapper h2{
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -1237,6 +1237,10 @@ summary{
         width: 100%;
     }
 }
+
+
+
+
 
 
 /*===================
@@ -1482,6 +1486,8 @@ summary{
 
 
 
+
+
 /*=====================
     Coffee styling
 ======================*/
@@ -1558,8 +1564,6 @@ summary{
     background-color: #b69876;
 }
 
-
-
 /*coffee collection*/
 .coffee-collection{
     display: flex;
@@ -1573,11 +1577,20 @@ summary{
 .coffee-category{
     display: flex;
     align-items: center;
-    gap: 2rem;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
 }
-.coffee-collection-heading{
-    font-family: "Inter",serif;
+.coffee-category span{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.coffee-category input{
+    padding: .7rem 10vw;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 18px;
 }
 .coffee-container{
     display: flex;
@@ -1610,9 +1623,10 @@ summary{
     margin-left: .6rem;
     margin-right: .6rem;
 }
-.coffee-price h3, strong{
+.coffee-price h2, strong{
     color: var(--primary-color);
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 .coffee-card p{
     color: var(--primary-color);
@@ -1621,6 +1635,8 @@ summary{
     line-height: 1.7;
     text-align: start;
     padding: .6rem;
+    text-align: center;
+    font-size: .9rem;
 }
 .taste{
     display: flex;
@@ -1782,6 +1798,8 @@ summary{
 
 
 
+
+
 /*=====================
     EVENTS STYLING
 ======================*/
@@ -1868,10 +1886,11 @@ summary{
     padding: 0rem 1rem;
     border-radius: 12px;
 }
-.events-details-card h3{
+.events-details-card h2{
     margin-bottom: .8rem;
     color: var(--primary-color);
     font-weight: 700;
+    font-size: 1.25rem;
 }
 .events-details-card p{
     color: var(--primary-color);
@@ -2357,6 +2376,9 @@ summary{
         align-items: center;
         justify-content: center;
     }
+    .cart-content{
+        align-items: center;
+    }
     .cart-actions{
         flex-direction: column;
         align-items: center;
@@ -2371,7 +2393,6 @@ summary{
         width: 1.3rem;
         height: 1.2rem;
     }
-
 
     .sidebar-wrapper{
         width: 100%;
