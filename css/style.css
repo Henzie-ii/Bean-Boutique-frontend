@@ -2123,7 +2123,7 @@ summary{
 .cart-heading{
     padding: 2rem 0;
 }
-.cart-heading h3{
+.cart-heading h1{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -2139,20 +2139,22 @@ summary{
     gap:4rem;
 }
 .cart-list{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 2rem;
 }
 .cart-card{
     display: flex;
     background-color: var(--standard-color);
     align-items: center;
-    padding: 1rem;
+    padding: 1rem ;
     border-radius: 14px;
     border: 1px solid transparent;
     transition: all .4s ease-out;
-    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
     
 }
 .cart-card:hover{
@@ -2160,8 +2162,8 @@ summary{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .cart-card img{
-    width: 10rem;
-    height: 100%;
+    width: 8rem;
+    height: 8rem;
     max-height: 10rem;
     object-fit: cover;
     background-color: var(--standard-color);
@@ -2169,7 +2171,7 @@ summary{
 .cart-details{
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     justify-content: space-between;
     flex-grow: 1;
     flex-direction: column;
@@ -2181,12 +2183,14 @@ summary{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 1rem;
 }
 .cart-tags{
     display: flex;
-    gap: 2rem;
+    gap: .5rem;
     align-items: center;
     padding: .8rem 0;
+    flex-wrap: wrap;
 }
 .cart-tags span{
     background-color: var(--tertiary-color);
@@ -2202,7 +2206,8 @@ summary{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 11.5rem;
+    gap: 1rem;
+    width: 100%;
 }
 .cart-quantity{
     display: flex;
@@ -2244,6 +2249,7 @@ summary{
 }
 .remove-btn img{
     width: 1.3rem;
+    height: 1.2rem;
 }
 .continue-shopping{
    color: var(--primary-color);
@@ -2266,7 +2272,7 @@ summary{
     flex-direction: column;
     gap: 1rem;
 }
-.sidebar-wrapper h3{
+.sidebar-wrapper h2{
     text-align: center;
     font-weight: 700;
     font-size: 1.5rem;
@@ -2321,4 +2327,55 @@ summary{
     font-weight: 500;
     font-size: .8rem;
     opacity: .7;
+}
+
+/*media responseviness*/
+@media screen and (max-width:900px){
+    .cart-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 560px){
+    .cart-heading h1{
+        text-align: center;
+        font-size: 1.65rem;
+    }
+    .cart-heading p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .cart-card{
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .cart-card img{
+        height: 9rem;
+        width: 100%;
+    }
+    .cart-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cart-actions{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart-details {
+        align-items: center;
+    }
+    .cart-quantity{
+        flex-direction: row;
+    }
+    .remove-btn img{
+        width: 1.3rem;
+        height: 1.2rem;
+    }
+
+
+    .sidebar-wrapper{
+        width: 100%;
+        max-width: 100%;
+
+    }
 }
