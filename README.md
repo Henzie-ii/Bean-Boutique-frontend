@@ -35,9 +35,6 @@ bean-boutique-frontend/
 ├── events.html                # Events and Workshops (tasting sessions, registration form)
 ├── cart.html                  # Shopping Cart (saved selections, checkout UI)
 ├── subscriptions.html         # Subscriptions & Offers (delivery tiers, promotions)
-├── about.html                 # Our Story (brand history, ethical sourcing, team
-├── account.html               # User Dashboard (subscription management, order history)
-├── faq.html                   # Frequently Asked Questions (shipping, returns accordion)
 │
 ├── assets/                    # All static media
 │   ├── images/
