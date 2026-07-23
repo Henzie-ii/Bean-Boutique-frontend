@@ -14,8 +14,8 @@
     --standard-color:#fff8f6;
     --button-hover:#783c1e;
 
-    --font-weight-main:800;
-    ---font-weight-minor:500;
+    --font-weight-main:700;
+    --font-weight-minor:500;
     --font-heading:"Inter",serif;
     --font-text:'Poppins',serif;
     --font-logo:"Cormorant Garamond", Garamond, "Times New Roman", serif;
@@ -45,18 +45,18 @@ button{
     justify-content: center;
     align-items: center;
     font-family: var(--font-heading);
-    font-weight: var(---font-weight-minor);
+    font-weight: var(--font-weight-minor);
     cursor: pointer;
 }
 
 h1,h2,h3{
     font-family: var(--font-heading);
-    font-weight: var(---font-weight-main);
+    font-weight: var(--font-weight-main);
     color: var(--primary-color);
 }
 h4,h4,h6{
     font-family: var(--font-heading);
-    font-family: var(---font-weight-minor);
+    font-family: var(--font-weight-minor);
     font-size: 1.3rem;
     color: var(--primary-color);
 }
@@ -123,7 +123,7 @@ header{
 .nav-items a{
     color: var(--primary-color);
     font-family: var(--font-heading);
-    font-weight: var(---font-weight-minor);
+    font-weight: var(--font-weight-minor);
     position: relative;
 }
 .nav-items a::after{
@@ -151,6 +151,16 @@ header{
 }
 .cart img{
     width: 1.4rem;
+}
+.cart-link{
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+.cart-badge{
+    position: absolute;
+    bottom:12px;
+    left: 12px;
 }
 
 /*hero section*/
@@ -249,7 +259,7 @@ header{
 }
 .seasonal-heading p{
     font-family: var(--font-heading);
-    font-weight: var(---font-weight-minor);
+    font-weight: var(--font-weight-minor);
     color: var(--primary-color);
     opacity: .7;
 }
@@ -343,7 +353,7 @@ header{
 }
 .brand-container h2{
     font-family: var(--font-text);
-    font-weight: 700;
+    font-weight: var(--font-weight-main);
     font-size: 1.8rem;
     line-height: 1.5;
     color: var(--primary-color);
@@ -1297,7 +1307,7 @@ summary{
     flex-direction: column;  
 }
 .equipment-collection h2{
-    font-weight: 700;
+    font-weight: var(--font-weight-main);
     color: var(--primary-color);
     margin-bottom: .4rem;
 }
@@ -1333,7 +1343,7 @@ summary{
 }
 .equipment-card button{
     padding: .6rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-main);
     transition: background-color .4s;
 }
 .equipment-card button:hover{
@@ -1345,7 +1355,7 @@ summary{
     gap: .6rem;
 }
 .equipment-content span{
-    font-weight: var(---font-weight-minor);
+    font-weight: var(--font-weight-minor);
     opacity: .8;
     font-style: italic;
     color: var(--primary-color);
@@ -1401,7 +1411,7 @@ summary{
     width: 2.4rem;
 }
 .tip-text h3{
-    font-weight: 700;
+    font-weight: var(--font-weight-main);
     font-family: "Salina",serif;
     color: #000000;
     margin-bottom: .7rem;
